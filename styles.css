@@ -1,9 +1,9 @@
 :root {
-  --bg: #fcfbf7;
-  --text: #1f1f1c;
-  --muted: #666257;
-  --accent: #d7d0bf;
-  --link: #2f5fd0;
+  --bg: #050505;
+  --text: #f5f5f2;
+  --muted: #a1a19a;
+  --accent: #ffffff;
+  --link: #ffffff;
   --max-width: 680px;
 }
 
@@ -17,7 +17,7 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Manrope", system-ui, sans-serif;
 }
 
 body {
@@ -29,14 +29,14 @@ body {
   margin: 0 auto;
   padding: 72px 28px 56px;
   line-height: 1.72;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
 }
 
 .accent-dot {
-  width: 54px;
-  height: 54px;
+  width: 14px;
+  height: 14px;
   border-radius: 999px;
-  background: radial-gradient(circle at 30% 30%, #e6dfce, #cfc6b0);
+  background: var(--accent);
   margin-bottom: 44px;
   opacity: 0.95;
 }
@@ -51,14 +51,16 @@ p {
 
 .intro {
   margin-bottom: 36px;
-  font-size: 1.32rem;
-  line-height: 1.55;
+  font-size: 1.34rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .section-label {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   margin-bottom: 6px;
+  letter-spacing: 0.01em;
 }
 
 .footer-line {
@@ -69,27 +71,26 @@ p {
 
 a {
   color: var(--link);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
 }
 
 a:hover {
-  text-decoration: underline;
+  opacity: 0.82;
 }
 
 @media (max-width: 640px) {
   .wrap {
     padding: 56px 22px 40px;
-    font-size: 1.02rem;
+    font-size: 1rem;
     line-height: 1.68;
   }
 
   .accent-dot {
-    width: 46px;
-    height: 46px;
     margin-bottom: 34px;
   }
 
   .intro {
-    font-size: 1.2rem;
+    font-size: 1.18rem;
   }
 }
