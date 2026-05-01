@@ -3,7 +3,8 @@
   --text: #1f1f1c;
   --muted: #666257;
   --accent: #d7d0bf;
-  --max-width: 640px;
+  --link: #2f5fd0;
+  --max-width: 680px;
 }
 
 * {
@@ -27,8 +28,8 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 72px 28px 56px;
-  line-height: 1.65;
-  font-size: 1.15rem;
+  line-height: 1.72;
+  font-size: 1.1rem;
 }
 
 .accent-dot {
@@ -41,7 +42,7 @@ body {
 }
 
 section {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 p {
@@ -49,13 +50,15 @@ p {
 }
 
 .intro {
-  margin-bottom: 34px;
+  margin-bottom: 36px;
+  font-size: 1.32rem;
+  line-height: 1.55;
 }
 
 .section-label {
   color: var(--muted);
   font-size: 0.95rem;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .footer-line {
@@ -64,15 +67,29 @@ p {
   font-size: 0.95rem;
 }
 
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 640px) {
   .wrap {
     padding: 56px 22px 40px;
-    font-size: 1.05rem;
+    font-size: 1.02rem;
+    line-height: 1.68;
   }
 
   .accent-dot {
     width: 46px;
     height: 46px;
     margin-bottom: 34px;
+  }
+
+  .intro {
+    font-size: 1.2rem;
   }
 }
