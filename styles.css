@@ -2,7 +2,7 @@
   --bg: #050505;
   --text: #f5f5f2;
   --muted: #a1a19a;
-  --accent: #ffffff;
+  --accent: #de271a;
   --link: #ffffff;
   --max-width: 680px;
 }
@@ -27,8 +27,8 @@ body {
 .wrap {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 72px 28px 56px;
-  line-height: 1.72;
+  padding: 80px 28px 68px;
+  line-height: 1.9;
   font-size: 1.08rem;
 }
 
@@ -37,12 +37,12 @@ body {
   height: 14px;
   border-radius: 999px;
   background: var(--accent);
-  margin-bottom: 44px;
+  margin-bottom: 56px;
   opacity: 0.95;
 }
 
 section {
-  margin-bottom: 28px;
+  margin-bottom: 38px;
 }
 
 p {
@@ -50,21 +50,21 @@ p {
 }
 
 .intro {
-  margin-bottom: 36px;
+  margin-bottom: 48px;
   font-size: 1.34rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 
 .section-label {
   color: var(--muted);
   font-size: 0.92rem;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   letter-spacing: 0.01em;
 }
 
 .footer-line {
-  margin-top: 42px;
+  margin-top: 54px;
   color: var(--muted);
   font-size: 0.95rem;
 }
@@ -81,16 +81,22 @@ a:hover {
 
 @media (max-width: 640px) {
   .wrap {
-    padding: 56px 22px 40px;
+    padding: 60px 22px 46px;
     font-size: 1rem;
-    line-height: 1.68;
+    line-height: 1.82;
   }
 
   .accent-dot {
+    margin-bottom: 40px;
+  }
+
+  section {
     margin-bottom: 34px;
   }
 
   .intro {
     font-size: 1.18rem;
+    margin-bottom: 42px;
+    line-height: 1.6;
   }
 }
